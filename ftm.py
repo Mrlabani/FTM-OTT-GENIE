@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yt_dlp
 
 # Replace with your channel username
-CHANNEL_USERNAME = '@ftmmovieskiduniya'
+CHANNEL_USERNAME = '@NOOBPrivate'
 
 # Function to check if the user is a member of the specified channel
 async def is_user_member(update: Update) -> bool:
@@ -50,8 +50,8 @@ def download_video(url, download_path='downloads/'):
             file_size = info_dict.get('filesize', 0) or info_dict.get('filesize_approx', 0)  # Get file size
 
         # Customize the filename
-        custom_filename = f"@ftmdeveloperz {video_title} 📥 Uᴘʟᴏᴀᴅᴇᴅ Bʏ @ftmmovieskiduniya 🚀\n" \
-                          "🔧 Rɪᴘᴘᴇᴅ Bʏ @FTMDEVELOPER 💾\n" \
+        custom_filename = f"@noob_je {video_title} 📥 Uᴘʟᴏᴀᴅᴇᴅ Bʏ @NOOBPrivate 🚀\n" \
+                          "🔧 Rɪᴘᴘᴇᴅ Bʏ @noob_je 💾\n" \
                           "⚠️ Dɪsᴄʟᴀɪᴍᴇʀ: Tʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 𝟷𝟶 ᴍɪɴᴜᴛᴇs, sᴏ ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs. ⏳"
 
         # Define final output path with the custom name
@@ -113,7 +113,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def main():
     # Get the bot token from the environment variables
-    TOKEN = '7401708143:AAGG3RTL54BxSZogp_hof94xe2Dx57_wZqw' #Now Deploy 
+    TOKEN = '7837580863:AAHKiccCBX1mvo4Xm5luQBwel4bc300nI2s' #Now Deploy 
 
     # Initialize the bot
     application = ApplicationBuilder().token(TOKEN).build()
